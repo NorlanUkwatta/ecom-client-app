@@ -6,12 +6,28 @@
 
     <groupId>lk.jiat</groupId>
     <artifactId>ecom-client-app</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>lk.jiat</groupId>
+            <artifactId>ecom-user</artifactId>
+            <version>1.0</version>
+            <type>ejb-client</type>
+        </dependency>
+
+        <dependency>
+            <groupId>fish.payara.extras</groupId>
+            <artifactId>payara-embedded-all</artifactId>
+            <version>6.2025.11</version>
+        </dependency>
+
+    </dependencies>
 
 </project>
